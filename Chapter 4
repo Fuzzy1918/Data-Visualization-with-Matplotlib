@@ -3,3 +3,7 @@ fig, ax =plt.subplots()
 plt.style.use("Solarize_Light2")
 ax.plot(austin_weather["MONTH"], austin_weather["MLY-TAVG-NORMAL"])
 plt.show()
+
+# Set figure dimensions and save as a PNG
+fig.set_size_inches([5,3])
+fig.savefig("figure_5_3.png")
